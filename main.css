@@ -2,7 +2,6 @@ body{
 	background-color: #DADADA;
 	justify-content: space-between;
 	display: flex;
-	flex-direction: row;
 	font-family: Calibri, serif;
 	flex-wrap: wrap;
 	box-sizing: border-box;
@@ -83,22 +82,19 @@ body{
 	justify-content: left;
 }
 
-.cheese{
+.name p{
 	display: flex;
 	overflow: hidden;
 	height: 80%;
-	border: 1px solid #60AEEA;
-	box-shadow: 4px 4px 8px #C0DEF5;
-}
-.cheese::placeholder{
-	color:black;
-}
-.cheese:focus{
-	outline: none;
-	box-shadow: 0 0 0;
 }
 
-.tomatoes{
+.name p:focus{
+	border: 1px solid #60AEEA;
+	box-shadow: 4px 4px 8px #C0DEF5;
+	outline: none;
+}
+
+[contenteditable="false"]{
 	text-decoration: line-through;
 	text-align: center;
 }
@@ -150,11 +146,11 @@ body{
 	background-color: #DB2828;
 	color: white;
 	margin-left: 2%;
+	box-sizing: border-box;
 }
 .minus{
 	font-size: 23px;
 	box-shadow: 0 4px #BF2728;
-	box-sizing: border-box;
 }
 .minus:hover{
 	border: #BF2728;
@@ -175,7 +171,6 @@ body{
 	font-size: 23px;
 	background-color: #22BA46;
 	box-shadow: 0 4px #21A340;
-	box-sizing: border-box;
 }
 .plus:hover{
 	background-color: #21A340;
@@ -189,19 +184,15 @@ body{
 	background-color: #F3F3F3;
 	color: #6F6F6F;
 	box-shadow: 0 4px #CFCFD0;
-	box-sizing: border-box;
-
 }
 .bought:hover{
 	background-color: #CFCFD0;
 	border:#CFCFD0;
-	box-sizing: border-box;
 }
 
 .cancel{
 	border-radius: 10%;
 	box-shadow: 0 4px #BF2728;
-	box-sizing: border-box;
 }
 .cancel:hover{
 	border: #BF2728;
