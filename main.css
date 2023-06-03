@@ -82,13 +82,13 @@ body{
 	justify-content: left;
 }
 
-.name p{
+.name {
 	display: flex;
 	overflow: hidden;
 	height: 80%;
 }
 
-.name p:focus{
+.name:focus{
 	border: 1px solid #60AEEA;
 	box-shadow: 4px 4px 8px #C0DEF5;
 	outline: none;
